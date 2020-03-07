@@ -1,0 +1,31 @@
+
+// 小程序根目录下的 app.json 文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    }, {
+      "pagePath": "pages/logs/index",
+      "text":"日志"
+    }]
+  },
+  
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
